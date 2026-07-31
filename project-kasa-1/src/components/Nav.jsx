@@ -1,26 +1,37 @@
-import logo from "../assets/images/LOGO.png"
+import logo from "../assets/images/LOGO.svg";
+import { Link } from "react-router-dom";
+
 
 const Nav = () => {
 
     return(
+        
+        <header>
 
-        <nav>
+            <nav>
 
-            <div className="logo">
-                <img src={logo} alt="Logo du site Kasa" />
-            </div>
+                <div className="logo-site">
 
-            <ul className="nav-elements">
-                <li>
-                    <a href="">Accueil</a>
-                </li>
-                <li>
-                    <a href="">À Propos</a>
-                </li>
-            </ul>
+                    <img src={logo} alt="Logo du site Kana" />
 
-        </nav>
+                </div>
 
+                <ul className="navbar">
+
+                    <li>
+                        <Link to="/">Accueil</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/about">À propos</Link>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+        
     );
 
 }

@@ -1,0 +1,16 @@
+.accomodation-cards{
+    height: 340px;
+    width: 340px;
+    background-color: #FF6060;
+    border-radius: 25px;
+    position: relative;
+}
+
+.accomodation-cards p {
+    position: absolute;
+    top: 270px;
+    right: 150px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #F6F6F6;
+}

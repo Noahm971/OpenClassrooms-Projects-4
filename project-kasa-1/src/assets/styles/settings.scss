@@ -1,0 +1,22 @@
+$orange: #FF6060;
+$black: #000000;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}

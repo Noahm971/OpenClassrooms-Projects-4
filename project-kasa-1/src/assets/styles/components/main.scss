@@ -1,0 +1,59 @@
+main{
+    padding: 0 50px;
+    width: 1440px;
+}
+
+.presentation{
+    width: 1240px;
+    margin-bottom: 50px;
+}
+
+.presentation-background {
+    position: relative;
+    width: 100%;
+    height: 225px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../images/IMG.png") center/cover no-repeat;
+    filter: brightness(50%);
+}
+
+.presentation-background h1 {
+    position: relative;
+    color: white;
+    z-index: 1;
+    width: 735px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.accomodation{
+    display: flex;
+    width: 1240px;
+    height: 830px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container{
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 25px;
+}

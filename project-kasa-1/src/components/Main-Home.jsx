@@ -8,7 +8,7 @@ const listItems = tab.map((element) =>
 
 );
 
-const Main = () => {
+const MainHome = () => {
 
     return(
 
@@ -40,4 +40,4 @@ const Main = () => {
 
 }
 
-export default Main;
+export default MainHome;

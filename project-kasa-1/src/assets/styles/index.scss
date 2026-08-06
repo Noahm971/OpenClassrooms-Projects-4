@@ -5,5 +5,7 @@
 @use "./pages/error";
 @use "./components/card";
 @use "./components/nav";
-@use "./components/main";
+@use "./components/main-home";
+@use "./components/main-about.scss";
+@use "./components/collapse";
 @use "./components/footer";

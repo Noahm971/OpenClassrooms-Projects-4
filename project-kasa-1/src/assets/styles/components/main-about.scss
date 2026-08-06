@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    width: 1440px;
+}
+
+.header-img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 225px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    .img {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: url(../../images/IMG2.png) center/cover no-repeat;
+        filter: brightness(80%);
+    }
+};
+
+.collapse-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1025px;
+    height: 100%;
+}
+p{
+    letter-spacing: 0.25px;
+    font-size: 1.1rem;
+}

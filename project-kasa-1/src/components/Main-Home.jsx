@@ -1,14 +1,19 @@
 import Card from "./Card";
-
-const tab = [0, 1, 2, 3, 4, 5];
-
-const listItems = tab.map((element) => 
-
-    <Card />
-
-);
+import { useState, useEffect } from "react";
 
 const MainHome = () => {
+
+    const [logements, setLogements] = useState([]);
+
+    useEffect(() => {
+
+        fetch("/data.json").then((res)=> res.json()).then((data) => setLogements(data)
+        )
+
+    }, []);
+
+    console.log(logements);
+    
 
     return(
 
@@ -28,7 +33,11 @@ const MainHome = () => {
 
                 <div className="grid-container">
 
-                    {listItems}
+                    {logements.map((element)=> {
+                    
+                        return <Card element={element}/>
+
+                    })}
                     
                 </div>
 

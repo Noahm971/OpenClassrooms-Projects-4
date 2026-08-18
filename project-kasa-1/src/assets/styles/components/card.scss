@@ -1,17 +1,50 @@
 .accomodation-cards{
-    height: 340px;
-    width: 340px;
-    background-color: #FF6060;
-    border-radius: 25px;
+    height: 350px;
+    width: 350px;
     position: relative;
     
-    p {
+    .img-container{
+
+        display: flex;
+        height: 100%;
+        width: 100%;
+        transition: 0.2s;
+        box-shadow: 1px 1px 10px 5px rgb(182, 181, 181); 
+
+    }
+
+    .img-gallery{
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        inset: 0;
+        filter: brightness(65%);
+        z-index: 1;
+        transition: 0.2s;
+
+    }
+
+    .text-gallery {
         position: absolute;
-        top: 270px;
-        right: 150px;
+        padding: 10px;
+        width: 300px;
+        top:270px;
+        right: 40px;
         font-size: 1.4rem;
         font-weight: bold;
         color: #F6F6F6;
+        z-index: 2;
     }
 }
 
+.img-gallery:hover{
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+.img-container:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px 5px rgb(255, 96, 96); 
+}

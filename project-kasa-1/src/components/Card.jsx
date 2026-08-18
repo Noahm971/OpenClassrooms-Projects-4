@@ -1,9 +1,15 @@
-const Card = () => {
+const Card = ({ element }) => {
 
     return(
 
-        <div className="accomodation-cards">
-            <p>Titre de la location</p>
+        <div className='accomodation-cards' key={element.id}>
+            <p className="text-gallery">{element.title}</p>
+            <div className="img-container">
+
+                <img className="img-gallery" src={element.cover} alt={element.title}></img>
+
+            </div>
+            
         </div>
 
     );

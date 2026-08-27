@@ -5,8 +5,10 @@
 @use "./pages/error";
 @use "./components/card";
 @use "./components/nav";
-@use "./components/main-home";
+@use "./components/main-home.scss";
 @use "./components/main-about.scss";
 @use "./components/main-error.scss";
-@use "./components/collapse";
+@use "./components/main-logement.scss";
+@use "./components/collapse.scss";
+@use "./components/carrousel.scss";
 @use "./components/footer";

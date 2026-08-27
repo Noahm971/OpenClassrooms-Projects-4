@@ -9,7 +9,7 @@ const MainAbout = () => {
 
             <section className="header-img">
 
-                <div className="img-container">
+                <div className="img-container-about">
 
                     <div className="img"></div>
 

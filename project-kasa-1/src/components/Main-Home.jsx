@@ -7,13 +7,9 @@ const MainHome = () => {
 
     useEffect(() => {
 
-        fetch("/data.json").then((res)=> res.json()).then((data) => setLogements(data)
-        )
+        fetch("/data.json").then((res)=> res.json()).then((data) => setLogements(data))
 
     }, []);
-
-    console.log(logements);
-    
 
     return(
 
@@ -35,7 +31,7 @@ const MainHome = () => {
 
                     {logements.map((element)=> {
                     
-                        return <Card element={element}/>
+                        return <Card element={element} key={element.id}/>
 
                     })}
                     

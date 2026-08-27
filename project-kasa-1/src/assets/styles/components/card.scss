@@ -6,8 +6,10 @@
     .img-container{
 
         display: flex;
+        overflow: hidden;
         height: 100%;
         width: 100%;
+        border-radius: 25px;
         transition: 0.2s;
         box-shadow: 1px 1px 10px 5px rgb(182, 181, 181); 
 
@@ -20,7 +22,7 @@
         object-fit: cover;
         border-radius: 25px;
         inset: 0;
-        filter: brightness(65%);
+        filter: brightness(75%);
         z-index: 1;
         transition: 0.2s;
 
@@ -41,7 +43,7 @@
 
 .img-gallery:hover{
     transform: scale(1.1);
-    filter: brightness(80%);
+    filter: brightness(100%);
 }
 
 .img-container:hover{

@@ -1,0 +1,115 @@
+.carrousel{
+    height: 450px;
+    width: 1240px;
+    margin: 50px 0;
+}
+
+.carrousel-container{
+    position: relative;
+    width: 1240px;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px 5px rgb(182, 181, 181); 
+}
+
+.picture-container, .arrow-left, .arrow-right{
+    position: absolute;
+    top: 0;
+    height: 415px;
+}
+
+.picture-container{
+    left: 0;
+    width: 1240px;
+    z-index: 1;
+}
+
+.picture-container img{
+    width: 1240px;
+    height: 450px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.arrow-left{
+    left: 0;
+    width: 150px;
+    z-index: 2;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-right{
+    right: 0;
+    width: 150px;
+    z-index: 2;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-first, .left-second, .right-first, .right-second{
+    transition: 0.3s;
+}
+
+.left-first, .left-second {
+    position: absolute;
+    width: 75px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.left-first {
+    transform: rotate(-50deg);
+    top: 205px;
+}
+
+.left-second {
+    transform: rotate(50deg);
+    top: 257px;
+}
+
+.right-first, .right-second {
+    position: absolute;
+    width: 75px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+}
+
+.right-first {
+    transform: rotate(50deg);
+    top: 205px;
+}
+
+.right-second {
+    transform: rotate(-50deg);
+    top: 257px;
+}
+
+.arrow-left:hover .left-first, .arrow-left:hover .left-second, .arrow-right:hover .right-first, .arrow-right:hover .right-second{
+    background: rgba(255, 96, 96, 1);
+}
+
+.pic-count{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 50px;
+    color: white;
+    background-color: transparent;
+    top: 365px;
+    right:580px;
+    z-index: 3;
+}
+
+.pic-count p{
+    font-size: 2rem;
+}
+

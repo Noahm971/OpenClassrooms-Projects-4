@@ -1,7 +1,6 @@
-import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import MainError from "../components/Main-Error";
+import MainError from "../mains/Main-Error";
 
 const Error = () => {
 
@@ -9,11 +8,9 @@ const Error = () => {
 
         <div className="main-container">
 
-            <Nav />
 
             <MainError />
 
-            <Footer />
 
         </div>
 

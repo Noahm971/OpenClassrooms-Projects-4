@@ -1,5 +1,6 @@
-import Card from "./Card";
+import Card from "../components/Card";
 import { useState, useEffect } from "react";
+import { Navigate } from "react-router-dom";
 
 const MainHome = () => {
 
@@ -7,7 +8,21 @@ const MainHome = () => {
 
     useEffect(() => {
 
-        fetch("/data.json").then((res)=> res.json()).then((data) => setLogements(data))
+        fetch("/data.json")
+        .then((res)=> {
+
+            if (!res.ok) {
+
+                return <Navigate to="/404" replace/>;
+
+            } else {
+
+                return res.json();
+
+            }
+
+        })
+        .then((data) => setLogements(data))
 
     }, []);
 

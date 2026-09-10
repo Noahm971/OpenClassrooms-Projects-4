@@ -1,5 +1,4 @@
-import img from "../assets/images/IMG2.png"
-import Collapse from "./Collapse";
+import Collapse from "../components/Collapse";
 
 const MainAbout = () => {
 
@@ -19,7 +18,7 @@ const MainAbout = () => {
 
             <section className="main-content">
 
-                <div className="collapse-container">
+                <div className="collapse-container-about">
 
                     <Collapse titleSpan="Fiabilité">
                         <p>

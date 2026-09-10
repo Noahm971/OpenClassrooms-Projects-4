@@ -1,6 +1,5 @@
-import React from "react";
 import Nav from "../components/Nav";
-import MainAbout from "../components/Main-About";
+import MainAbout from "../mains/Main-About";
 import Footer from "../components/Footer";
 
 const About = () => {
@@ -9,11 +8,9 @@ const About = () => {
 
         <div className="main-container">
 
-            <Nav />
 
             <MainAbout />
 
-            <Footer />
 
         </div>
 

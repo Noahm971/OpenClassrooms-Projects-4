@@ -1,6 +1,5 @@
-import React from "react";
 import Nav from "../components/Nav";
-import MainHome from "../components/Main-Home";
+import MainHome from "../mains/Main-Home";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -9,11 +8,9 @@ const Home = () => {
 
         <div className="main-container">
 
-            <Nav />
 
             <MainHome />
 
-            <Footer />
 
         </div> 
         

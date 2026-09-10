@@ -1,12 +1,10 @@
-import Carrousel from "./Carrousel";
-import Collapse from "./Collapse";
+import Carrousel from "../components/Carrousel";
+import Collapse from "../components/Collapse";
 
 const Main_Logement = ({ element }) => {
 
     if (!element) {
-        
         return <main>Chargement...</main>
-
     }
 
     const stickerArray = element.tags;
@@ -80,12 +78,16 @@ const Main_Logement = ({ element }) => {
                             </Collapse>
 
                             <Collapse titleSpan="Équipements">
+
+                                <ul>
                             
-                                {equipments.map((equipment) => {
+                                    {equipments.map((equipment) => {
 
-                                    return <p className="equipment" key={ equipment }>{ equipment }</p>
+                                        return <li className="equipment" key={ equipment }>{ equipment }</li>
 
-                                })}
+                                    })}
+                                    
+                                </ul>    
                             
                             </Collapse>
 
@@ -96,7 +98,6 @@ const Main_Logement = ({ element }) => {
         </main>
 
     );
-
 }
 
 export default Main_Logement; 

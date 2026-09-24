@@ -50,3 +50,15 @@
     transform: scale(1.05);
     box-shadow: 1px 1px 10px 5px rgb(255, 96, 96); 
 }
+
+@media screen and (max-width: 1200px) {
+    .accomodation-cards{
+        height: 320px;
+        width: 320px;
+        .text-gallery{
+            font-size: 1.2rem;
+            top: 250px;
+            right: 0px;
+        }
+    }
+}

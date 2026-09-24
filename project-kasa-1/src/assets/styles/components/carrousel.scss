@@ -115,5 +115,21 @@
     background: rgba(255, 96, 96, 1);
 }
 
-
+@media screen and (max-width: 1200px) {
+    .carrousel{
+        width: 750px;
+        .carrousel-container{
+            width: 750px;
+            .picture-container{
+                width: 750px;
+                img{
+                    width: 750px;
+                }
+            }
+        }
+        .pic-count{
+            right: 325px;
+        }
+    }
+}
 

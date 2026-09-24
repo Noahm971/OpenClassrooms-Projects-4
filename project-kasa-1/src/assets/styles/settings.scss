@@ -35,3 +35,9 @@ p{
     letter-spacing: 0.25px;
     font-size: 1.1rem;
 }
+
+@media screen and (max-width: 1200px) {
+    .main-container{
+        width: 1200px;
+    }
+}

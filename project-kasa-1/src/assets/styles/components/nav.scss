@@ -38,3 +38,24 @@ header{
 .navbar li:hover{
     color : rgb(255, 96, 96);
 }
+
+@media  screen and (max-width: 1200px) {
+    header{
+        width: 1200px;
+        nav{
+            justify-content: center;
+            gap: 100px;
+            .navbar{
+                justify-content: flex-start;
+                gap: 20px;
+                li{
+                    margin-left: 0;
+                }
+            }
+            .logo-site{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

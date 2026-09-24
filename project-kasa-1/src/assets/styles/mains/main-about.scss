@@ -33,3 +33,9 @@ main{
     width: 1025px;
     height: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+    main{
+        width: 800px;
+    }
+}

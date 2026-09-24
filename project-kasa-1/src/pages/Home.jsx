@@ -1,6 +1,4 @@
-import Nav from "../components/Nav";
 import MainHome from "../mains/Main-Home";
-import Footer from "../components/Footer";
 
 const Home = () => {
 

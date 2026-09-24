@@ -76,3 +76,9 @@
     letter-spacing: 1.25px;
     padding: 5px !important;
 }
+
+@media screen and (max-width: 1200px) {
+    .collapse{
+        width: 700px;
+    }
+}

@@ -1,5 +1,3 @@
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 import Main_Logement from "../mains/Main-Logement";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";

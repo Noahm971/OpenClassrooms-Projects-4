@@ -102,3 +102,44 @@
 .active-star{
     color: rgb(255, 96, 96) !important;
 }
+
+@media (max-width: 1200px) {
+
+    .description {
+        width: 100%;
+
+        .collapse-logement{
+        flex-direction: column;
+        gap: 20px;
+        }
+
+        .banner {
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .host-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+
+            .host-name {
+                width: auto;
+                height: auto;
+            }
+
+            .host-pic {
+                width: 80px;
+                height: 80px;
+            }
+
+            .rating-container {
+                width: auto;
+                height: auto;
+                gap: 10px;
+            }
+        }
+    }
+}

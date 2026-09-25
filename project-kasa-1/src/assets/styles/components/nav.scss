@@ -39,23 +39,39 @@ header{
     color : rgb(255, 96, 96);
 }
 
-@media  screen and (max-width: 1200px) {
-    header{
-        width: 1200px;
-        nav{
-            justify-content: center;
-            gap: 100px;
-            .navbar{
-                justify-content: flex-start;
-                gap: 20px;
-                li{
-                    margin-left: 0;
-                }
-            }
-            .logo-site{
+@media screen and (max-width: 768px) {
+
+    header { 
+        width: 100% !important;
+        max-width: 100%;
+        padding: 10px 0; 
+        nav { 
+            width: 100%; 
+            margin: 5px 0; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logo-site { 
+                width: 110px;
+                flex-shrink: 0; 
+                img { 
+                    width: 100%; 
+                    height: auto;
+                    display: block; 
+                } 
+            } 
+            .navbar { 
+                width: auto;
                 display: flex;
-                justify-content: flex-end;
-            }
-        }
+                gap: 15px;
+                align-items: center;
+                margin-left: 10px; 
+                li { 
+                    margin-left: 20px; 
+                    font-size: 0.8rem;
+                    white-space: nowrap; 
+                } 
+            } 
+        } 
     }
 }

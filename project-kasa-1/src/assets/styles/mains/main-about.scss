@@ -34,8 +34,27 @@ main{
     height: 100%;
 }
 
-@media screen and (max-width: 1200px) {
-    main{
-        width: 800px;
+@media screen and (max-width: 768px) {
+
+    .header-img { 
+        width: 100% !important; 
+        margin-bottom: 25px !important; 
+        .img-container-about { 
+            width: 100% !important; 
+            height: 110px !important; 
+            border-radius: 10px !important; 
+            .img { 
+                width: 100%; 
+                height: 100%; 
+            } 
+        } 
+    } 
+    .collapse-container-about { 
+        width: 100%; 
+        height: auto; 
+        .collapse { 
+            width: 100%; 
+            margin: 8px 0; 
+        } 
     }
 }
